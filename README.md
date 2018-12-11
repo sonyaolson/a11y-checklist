@@ -38,8 +38,8 @@ Additionally, consider that many people do not have regular access to computers 
 To test, increase the level of zoom to ensure all content can be easily viewed at a larger size.
 
 Also see:
-https://www.w3.org/WAI/WCAG21/Understanding/reflow.html
-https://www.w3.org/WAI/test-evaluate/preliminary/#resize
+- https://www.w3.org/WAI/WCAG21/Understanding/reflow.html
+- https://www.w3.org/WAI/test-evaluate/preliminary/#resize
 
 ### 3. The document is semantically structured to help my assistive technologies interpret the content
 As much as possible, the structure of the document should describe the meaning of the content.  Use semantically appropriate HTML elements that can be understood by browsers and assistive technologies, which provides built-in accessibility features.
@@ -49,8 +49,8 @@ For example, all browsers and screen readers know how to understand and interpre
 To test, review the generated HTML markup. Evaluate each element to determine if a more appropriate tag exists.
 
 Also see:
-https://reactjs.org/docs/accessibility.html#semantic-html
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+- https://reactjs.org/docs/accessibility.html#semantic-html
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
 
 ### 4. Meaning is preserved when I cannot perceive differences between colors
@@ -69,5 +69,5 @@ Interactive elements are large enough to be easily targeted via an imprecise cli
 To test, navigate all flows with the keyboard.  For example, a button that opens a modal should move the focus to the new content.
 
 Also see:
-https://reactjs.org/docs/accessibility.html#programmatically-managing-focus
-https://www.w3.org/WAI/test-evaluate/preliminary/#interaction
+- https://reactjs.org/docs/accessibility.html#programmatically-managing-focus
+- https://www.w3.org/WAI/test-evaluate/preliminary/#interaction
