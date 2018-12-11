@@ -1,5 +1,5 @@
 # Empathetic Web Accessibility
-## A checklist of human-centered accessibility tests for web development
+A checklist of human-centered accessibility tests for web development
 
 ## The Checklist
 1. [The content flows in a linear, meaningful order no matter how I view it](#1-the-content-flows-in-a-linear-meaningful-order-no-matter-how-i-view-it)
