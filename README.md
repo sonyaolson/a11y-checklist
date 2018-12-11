@@ -1,5 +1,12 @@
 # Empathetic Web Accessibility
-## A checklist of human-centered accessibility tests for web development
+A checklist of human-centered accessibility tests for web development
+
+## The Checklist
+1. [The content flows in a linear, meaningful order no matter how I view it](#1-the-content-flows-in-a-linear-meaningful-order-no-matter-how-i-view-it)
+2. [The page responds to my viewport dimensions and zoom level](#2-the-page-responds-to-my-viewport-dimensions-and-zoom-level)
+3. [The document is semantically structured to help assistive technologies interpret the content](#3-the-document-is-semantically-structured-to-help-assistive-technologies-interpret-the-content)
+4. [Meaning is preserved when I cannot perceive differences between colors](#4-meaning-is-preserved-when-i-cannot-perceive-differences-between-colors)
+5. [It's always easy to interact with dynamic content](#5-its-always-easy-to-interact-with-dynamic-content)
 
 ### How to use this checklist
 At every step in the process, consider what barriers people might encounter when using your product and eliminate them when possible.  Use this checklist as part of a final check, especially when reviewing code.
@@ -16,12 +23,6 @@ Have you used your computer or phone in a high glare environment?
 Used a website while distracted?
 Tried to navigate a website on your phone with gloves on?
 
-## The Checklist
-1. The content flows in a linear, meaningful order no matter how I view it
-2. The page responds to my viewport dimensions and zoom level
-3. The document is semantically structured to help assistive technologies interpret the content
-4. Meaning is preserved when I cannot perceive differences between colors
-5. It's always easy to interact with dynamic content
 
 ### 1. The content flows in a meaningful order no matter how I view it
 There are many ways people view content on the web. Whether using a screen reader, keyboard-based navigation, or as a developer viewing source, the fundamental linear document flow should match the visual flow.
@@ -84,6 +85,3 @@ To test, navigate all flows with the keyboard.  For example, a button that opens
 Also see:
 https://reactjs.org/docs/accessibility.html#programmatically-managing-focus
 https://www.w3.org/WAI/test-evaluate/preliminary/#interaction
-
-
-
