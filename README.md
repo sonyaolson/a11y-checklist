@@ -2,7 +2,7 @@
 A checklist of human-centered accessibility tests for web development
 
 ## The Checklist
-1. [The content flows in a linear, meaningful order no matter how I view it](#1-the-content-flows-in-a-linear-meaningful-order-no-matter-how-i-view-it)
+1. [The content flows in a linear, meaningful order no matter how I view it](#1-the-content-flows-in-a-meaningful-order-no-matter-how-i-view-it)
 2. [The page responds to my viewport dimensions and zoom level](#2-the-page-responds-to-my-viewport-dimensions-and-zoom-level)
 3. [The document is semantically structured to help assistive technologies interpret the content](#3-the-document-is-semantically-structured-to-help-assistive-technologies-interpret-the-content)
 4. [Meaning is preserved when I cannot perceive differences between colors](#4-meaning-is-preserved-when-i-cannot-perceive-differences-between-colors)
