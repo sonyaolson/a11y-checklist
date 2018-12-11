@@ -1,28 +1,14 @@
-# Empathetic Web Accessibility
-A checklist of human-centered accessibility tests for web development
+# Empathetic Accessibility Checklist
+**A checklist of human-centered accessibility considerations for web development**
+
+As a supplement to automated testing tools, use this checklist to identify and eliminate barriers people may face when using your website.  
 
 ## The Checklist
-1. [The content flows in a linear, meaningful order no matter how I view it](#1-the-content-flows-in-a-meaningful-order-no-matter-how-i-view-it)
+1. [The content flows in a meaningful order no matter how I view it](#1-the-content-flows-in-a-meaningful-order-no-matter-how-i-view-it)
 2. [The page responds to my viewport dimensions and zoom level](#2-the-page-responds-to-my-viewport-dimensions-and-zoom-level)
-3. [The document is semantically structured to help assistive technologies interpret the content](#3-the-document-is-semantically-structured-to-help-assistive-technologies-interpret-the-content)
+3. [The document is semantically structured to help my assistive technologies interpret the content](#3-the-document-is-semantically-structured-to-help-my-assistive-technologies-interpret-the-content)
 4. [Meaning is preserved when I cannot perceive differences between colors](#4-meaning-is-preserved-when-i-cannot-perceive-differences-between-colors)
 5. [It's always easy to interact with dynamic content](#5-its-always-easy-to-interact-with-dynamic-content)
-
-### How to use this checklist
-At every step in the process, consider what barriers people might encounter when using your product and eliminate them when possible.  Use this checklist as part of a final check, especially when reviewing code.
-
-### Why isn't automated testing enough?
-Creating a web experience accessible to everyone requires an understanding of the challenges people face when using digital products.  Automated accessibility tools are a useful tool to identify possible problems, but cannot prove accessibility.
-
-### Why is accessibility important?
-You might find yourself required by law or contract to be accessible via WCAG compliance.  However, designing for everyone is also the right thing to do.  In many cases, accessible development also enforces good programming practices.
-
-Our products aren't always used in ideal environments.  At some point you are likely to find yourself benefiting from accessible design practices (if you haven't already).
-
-Have you used your computer or phone in a high glare environment?
-Used a website while distracted?
-Tried to navigate a website on your phone with gloves on?
-
 
 ### 1. The content flows in a meaningful order no matter how I view it
 There are many ways people view content on the web. Whether using a screen reader, keyboard-based navigation, or as a developer viewing source, the fundamental linear document flow should match the visual flow.
@@ -55,7 +41,7 @@ Also see:
 https://www.w3.org/WAI/WCAG21/Understanding/reflow.html
 https://www.w3.org/WAI/test-evaluate/preliminary/#resize
 
-### 3. The document is semantically structured to help assistive technologies interpret the content
+### 3. The document is semantically structured to help my assistive technologies interpret the content
 As much as possible, the structure of the document should describe the meaning of the content.  Use semantically appropriate HTML elements that can be understood by browsers and assistive technologies, which provides built-in accessibility features.
 
 For example, all browsers and screen readers know how to understand and interpret the `<a>`  and `<button>` elements.  When native elements are not available, use the appropriate aria tags.
