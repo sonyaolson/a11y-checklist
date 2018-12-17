@@ -18,12 +18,12 @@ Layout and style can be used to enhance the page structure, but should not chang
 Example Violation
 ```html
 <body>
-	<div class="sidebar">
-		<!-- Secondary Content -->
-	</div>
-	<div>
-		<!-- Primary Content -->
-	</div>
+  <div class="sidebar">
+    <!-- Secondary Content -->
+  </div>
+  <div>
+    <!-- Primary Content -->
+  </div>
 </body>
 ```
 
@@ -35,7 +35,7 @@ Also called "page reflow," responsive design is critical to accessibility.  Make
 
 Additionally, consider that many people do not have regular access to computers and may use their phones as their primary access to your content or service.
 
-To test, increase the level of zoom to ensure all content can be easily viewed at a larger size.
+To test, increase the zoom level to ensure all content is easily viewed at larger sizes.
 
 Also see:
 - https://www.w3.org/WAI/WCAG21/Understanding/reflow.html
@@ -44,9 +44,9 @@ Also see:
 ### 3. The document is semantically structured to help my assistive technologies interpret the content
 As much as possible, the structure of the document should describe the meaning of the content.  Use semantically appropriate HTML elements that can be understood by browsers and assistive technologies, which provides built-in accessibility features.
 
-For example, all browsers and screen readers know how to understand and interpret the `<a>`  and `<button>` elements.  When native elements are not available, use the appropriate aria tags.
+For example, all browsers and screen readers know how to understand and interpret the `<a>`  and `<button>` elements.  When native elements are not available, use the appropriate aria attributes.
 
-To test, review the generated HTML markup. Evaluate each element to determine if a more appropriate tag exists.
+To test, review the generated HTML markup. Evaluate each element to determine if there is a more appropriate tag.
 
 Also see:
 - https://reactjs.org/docs/accessibility.html#semantic-html
