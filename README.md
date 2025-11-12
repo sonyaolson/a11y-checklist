@@ -15,7 +15,7 @@ Accessibility goes beyond compliance and automated testing. This checklist helps
 ### 1. Content flows in a logical order
 People experience content in many ways: through sight, sound, touch, and assistive technologies. The structure of your document should match the intended reading order, no matter how it’s presented.
 
-Use layout and style to enhance clarity, not to change meaning.
+Use layout and style to clarify meaning, not change it.
 A consistent, semantic flow helps everyone, including developers, screen readers, and keyboard users, follow along naturally.
 
 **Avoid:**
@@ -37,20 +37,20 @@ A consistent, semantic flow helps everyone, including developers, screen readers
 &nbsp;
 ### 2. Content responds to different viewports and zoom levels
 Design responsively so your layout remains usable and legible at any size.
-People may browse your site on a phone, a tablet, a large monitor, or while zoomed in for better visibility.'
+People may browse your site on a phone, a tablet, a large monitor, or while zoomed in for better visibility.
 
 As much as possible, ensure that all content and interactions remain available and functional as the viewport changes.
 Try zooming your page to confirm it scales gracefully without hiding important features.
 
 **Learn More:**
 - [WCAG 2.1: Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html)
-- [W3C: Resize Test Evaluation](https://www.w3.org/WAI/test-evaluate/preliminary/#resize)
+- [W3C: Resize text evaluation](https://www.w3.org/WAI/test-evaluate/preliminary/#resize)
 
 &nbsp;
 ### 3. Structure conveys meaning
 HTML isn’t just for presentation. It communicates purpose. Use semantic elements that express what your content is, not just how it looks.
 
-Native elements like <a> and <button> include built-in accessibility support. When you create custom components, use ARIA attributes thoughtfully and only when native semantics aren’t available.
+Native elements like `<a>` and `<button>` include built-in accessibility support. When you create custom components, use ARIA attributes thoughtfully and only when native semantics aren’t available.
 
 Review your markup to ensure every element serves a clear, semantic role.
 
@@ -66,14 +66,14 @@ Color should enhance communication, not define it. Make sure important informati
 Some people experience color differently because of color vision deficiency, lighting, or device quality. Use contrast and redundancy—such as pairing color with icons, text, or patterns—to convey meaning effectively. Follow established contrast guidelines to maintain legibility across lighting conditions.
 
 **Learn More:**
-- [Smashing Magazine: Color Contrast Tips](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
+- [Smashing Magazine: Color contrast tips](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
 
 
 &nbsp;
 ### 5. Interactive content feels natural
 People should always know where they are and what’s happening. When new content appears, focus should move predictably and stay visible.
 
-Design tap and click targets that are comfortably large, and ensure that small mistakes don’t have big consequences.
+Design tap and click targets that are comfortably large. Small mistakes should never have big consequences.
 
 Test with a keyboard and other non-pointer inputs to confirm the experience feels natural and complete.
 
@@ -83,5 +83,4 @@ Test with a keyboard and other non-pointer inputs to confirm the experience feel
 
 ---
 
-
-Designing for inclusivity helps your work reach more people and creates experiences that feel effortless for everyone.
+Inclusive design helps your work reach more people and makes every experience feel effortless.
