@@ -1,21 +1,24 @@
-# Empathetic Accessibility Checklist
-**A checklist of human-centered accessibility considerations for web development**
+# Human-First Accessibility Checklist
 
-As a supplement to automated testing tools, use this checklist to identify and eliminate barriers people may face when using your website.  
+### Designing for all people
 
-## The Checklist
-1. [The content flows in a meaningful order no matter how I view it](#1-the-content-flows-in-a-meaningful-order-no-matter-how-i-view-it)
-2. [The page responds to my viewport dimensions and zoom level](#2-the-page-responds-to-my-viewport-dimensions-and-zoom-level)
-3. [The document is semantically structured to help my assistive technologies interpret the content](#3-the-document-is-semantically-structured-to-help-my-assistive-technologies-interpret-the-content)
-4. [Meaning is preserved when I cannot perceive differences between colors](#4-meaning-is-preserved-when-i-cannot-perceive-differences-between-colors)
-5. [It's always easy to interact with dynamic content](#5-its-always-easy-to-interact-with-dynamic-content)
+Accessibility goes beyond compliance and automated testing. This checklist helps you build web experiences that feel natural, understandable, and adapt gracefully to every person and every device.
 
-### 1. The content flows in a meaningful order no matter how I view it
-There are many ways people view content on the web. Whether using a screen reader, keyboard-based navigation, or as a developer viewing source, the fundamental linear document flow should match the visual flow.
+&nbsp;
 
-Layout and style can be used to enhance the page structure, but should not change the way it's interpreted.
 
-Example Violation
+| ☑ The Checklist |
+|------------|
+| ❏ &nbsp;[Content flows in a logical order](#1-content-flows-in-a-logical-order)<br> ❏ &nbsp;[Content responds to different viewports and zoom levels](#2-content-responds-to-different-viewports-and-zoom-levels)<br> ❏ &nbsp;[Structure conveys meaning](#3-structure-conveys-meaning)<br> ❏ &nbsp;[Meaning doesn’t rely on color](#4-meaning-doesnt-rely-on-color)<br> ❏ &nbsp;[Interactive content feels natural](#5-interactive-content-feels-natural) &nbsp; |
+
+&nbsp;
+### 1. Content flows in a logical order
+People experience content in many ways: through sight, sound, touch, and assistive technologies. The structure of your document should match the intended reading order, no matter how it’s presented.
+
+Use layout and style to enhance clarity, not to change meaning.
+A consistent, semantic flow helps everyone, including developers, screen readers, and keyboard users, follow along naturally.
+
+**Avoid:**
 ```html
 <body>
   <div class="sidebar">
@@ -27,47 +30,58 @@ Example Violation
 </body>
 ```
 
-Also see:
-https://www.w3.org/WAI/test-evaluate/preliminary/#structure
+**Learn More:**
 
-### 2. The page responds to my viewport dimensions and zoom level
-Also called "page reflow," responsive design is critical to accessibility.  Make all features and content available to reasonable viewport configurations, including zoom level.
+[W3C: Page Structure Evaluation](https://www.w3.org/WAI/test-evaluate/preliminary/#structure)
 
-Additionally, consider that many people do not have regular access to computers and may use their phones as their primary access to your content or service.
+&nbsp;
+### 2. Content responds to different viewports and zoom levels
+Design responsively so your layout remains usable and legible at any size.
+People may browse your site on a phone, a tablet, a large monitor, or while zoomed in for better visibility.'
 
-To test, increase the zoom level to ensure all content is easily viewed at larger sizes.
+As much as possible, ensure that all content and interactions remain available and functional as the viewport changes.
+Try zooming your page to confirm it scales gracefully without hiding important features.
 
-Also see:
-- https://www.w3.org/WAI/WCAG21/Understanding/reflow.html
-- https://www.w3.org/WAI/test-evaluate/preliminary/#resize
+**Learn More:**
+- [WCAG 2.1: Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html)
+- [W3C: Resize Test Evaluation](https://www.w3.org/WAI/test-evaluate/preliminary/#resize)
 
-### 3. The document is semantically structured to help my assistive technologies interpret the content
-As much as possible, the structure of the document should describe the meaning of the content.  Use semantically appropriate HTML elements that can be understood by browsers and assistive technologies, which provides built-in accessibility features.
+&nbsp;
+### 3. Structure conveys meaning
+HTML isn’t just for presentation. It communicates purpose. Use semantic elements that express what your content is, not just how it looks.
 
-For example, all browsers and screen readers know how to understand and interpret the `<a>`  and `<button>` elements.  When native elements are not available, use the appropriate aria attributes.
+Native elements like <a> and <button> include built-in accessibility support. When you create custom components, use ARIA attributes thoughtfully and only when native semantics aren’t available.
 
-To test, review the generated HTML markup. Evaluate each element to determine if there is a more appropriate tag.
-
-Also see:
-- https://reactjs.org/docs/accessibility.html#semantic-html
-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+Review your markup to ensure every element serves a clear, semantic role.
 
 
-### 4. Meaning is preserved when I cannot perceive differences between colors
-Color should be supplemental, and not used alone to convey meaning.
+**Learn More:**
+- [React Accessibility: Semantic HTML](https://reactjs.org/docs/accessibility.html#semantic-html)
+- [MDN: HTML Elements Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
-There are many reasons people may have trouble distinguishing between colors including various forms of colorblindness, low-vision (including environmental causes such as high glare), or low quality displays.  Keep in mind that not all colorblindness is the same, so it's safest to simply avoid relying on color alone.
+&nbsp;
+### 4. Meaning doesn’t rely on color
+Color should enhance communication, not define it. Make sure important information remains clear without color differences.
 
-Also see:
-https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/
+Some people experience color differently because of color vision deficiency, lighting, or device quality. Use contrast and redundancy—such as pairing color with icons, text, or patterns—to convey meaning effectively. Follow established contrast guidelines to maintain legibility across lighting conditions.
 
-### 5. It's always easy to interact with dynamic content
-When interacting with dynamic content, focus is visible and flows appropriately. If the document contains interactive elements, focus should be correctly directed between active elements.
+**Learn More:**
+- [Smashing Magazine: Color Contrast Tips](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
 
-Interactive elements are large enough to be easily targeted via an imprecise click or tap, and a missed target has minimal consequences.
 
-To test, navigate all flows with the keyboard.  For example, a button that opens a modal should move the focus to the new content.
+&nbsp;
+### 5. Interactive content feels natural
+People should always know where they are and what’s happening. When new content appears, focus should move predictably and stay visible.
 
-Also see:
-- https://reactjs.org/docs/accessibility.html#programmatically-managing-focus
-- https://www.w3.org/WAI/test-evaluate/preliminary/#interaction
+Design tap and click targets that are comfortably large, and ensure that small mistakes don’t have big consequences.
+
+Test with a keyboard and other non-pointer inputs to confirm the experience feels natural and complete.
+
+**Learn More:**
+- [React Accessibility: Managing Focus](https://reactjs.org/docs/accessibility.html#programmatically-managing-focus)
+- [W3C: Interaction Evaluation](https://www.w3.org/WAI/test-evaluate/preliminary/#interaction)
+
+---
+
+
+Designing for inclusivity helps your work reach more people and creates experiences that feel effortless for everyone.
